@@ -10,6 +10,7 @@ public class Person extends NameHolder {
 	}
 	
 	public Person(String firstName, String lastName) throws NameException {
+		
 		this.lastName = firstName;
 		
 		super.setFirstName(lastName);
