@@ -12,7 +12,7 @@ public class PersonTest {
 	@Test
 	public void test() {
 		try {
-		String firstName = " ";
+		String firstName = "";
 		String lastName = "Smith";
 		Person x = new Person(firstName, lastName);
 		fail("Where is my exception");
