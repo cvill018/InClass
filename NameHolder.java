@@ -4,22 +4,20 @@ public abstract class NameHolder {
 	
 	public abstract String describeSelf();
 	
+	@Override
 	public String toString() {
 		return "First name: " + firstName;
 	}
 	
 	public void setFirstName(String firstName) throws NameException {
-		if(firstName.isEmpty()) {
-			
+		if (!firstName.isEmpty()) {
 			this.firstName = firstName;
-			
 		}
 		else {
 			throw new NameException("wrong");
 		}
 		
 	}
-	
 	protected String getFirstName() {
 		return firstName;
 	}
